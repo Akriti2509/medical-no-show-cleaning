@@ -1,0 +1,12 @@
+### Summary of Data Cleaning 
+
+- Converted ScheduledDay and AppointmentDay columns to datetime.
+- Created waiting_days feature by subtracting scheduled day from appointment day.
+- Removed invalid age values (age < 0).
+- Standardized Gender column to lowercase and mapped No-show to binary (0, 1).
+- Dropped unnecessary columns: PatientId, AppointmentID, ScheduledDay, AppointmentDay.
+- Removed duplicate rows.
+- Checked for missing values; none found.
+- Renamed column headers for uniform formatting (lowercase).
+
+Final dataset has 110526 rows and 11 columns. It is now clean, consistent, and ready for analysis or modeling.
